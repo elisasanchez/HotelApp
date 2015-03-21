@@ -3,6 +3,7 @@ var transfer = {
     imgSuccess: function(r){
         if(r.response == 1){
             $.mobile.loading( 'hide' );
+            almacenamiento.createReg($('#registro input:eq(0)').val(),dispositivo.getId());
             navigator.notification.alert('El registro de sus datos ha sido un éxito.', function(){
                 window.location.href = '#home';
             }, 'Registro','Aceptar');

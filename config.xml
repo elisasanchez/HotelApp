@@ -17,11 +17,12 @@
         </description>
 
         <author href="http://cenet.mx" email="you@youremail.com">
-            Carlos Celma
+            Arturo Ibarra
         </author>
         
         <gap:plugin name="org.apache.cordova.dialogs" />
         <gap:plugin name="org.apache.cordova.media-capture" />
         <gap:plugin name="org.apache.cordova.file-transfer" />
+        <gap:plugin name="org.apache.cordova.device" />
 
-    </widget>
+    </widget> 

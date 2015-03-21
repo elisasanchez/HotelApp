@@ -3,8 +3,7 @@ var fn = {
         document.addEventListener('deviceready',fn.init,false);
     },
     init: function(){
-        var x = false;
-        if(!x)
+        if(!almacenamiento.isRegistered())
             window.location.href = "#registro";
         $('#registro a:eq(0)').tap(capture.takePhoto);
         $('#registro a:eq(1)').tap(fn.registrar);
